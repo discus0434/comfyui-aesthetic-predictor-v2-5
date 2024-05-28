@@ -1,1 +1,1 @@
--e ./aesthetic-predictor-v2-5
+aesthetic-predictor-v2-5
