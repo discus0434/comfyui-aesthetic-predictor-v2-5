@@ -35,7 +35,6 @@ class CustomNodeMeta(type):
 
 
 class AestheticsPredictorNode(metaclass=CustomNodeMeta):
-
     RETURN_TYPES: tuple[str] = ("STRING",)
     RETURN_NAMES: tuple[str] = ("score",)
     FUNCTION: str = "predict"
@@ -86,16 +85,14 @@ class AestheticPredictorV2_5:
         )
         image = Image.fromarray(image_tensor).convert("RGB")
         # preprocess image
-        pixel_values = self.preprocessor(
-            images=image, return_tensors="pt"
-        ).pixel_values
+        pixel_values = self._preprocessor(images=image, return_tensors="pt").pixel_values
 
         if torch.cuda.is_available():
             pixel_values = pixel_values.to(torch.bfloat16).cuda()
 
         # predict aesthetic score
         with torch.inference_mode():
-            score = self.model(pixel_values).logits.squeeze().float().cpu().numpy()
+            score = self._model(pixel_values).logits.squeeze().float().cpu().numpy()
 
         return score
 
