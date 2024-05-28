@@ -2,6 +2,10 @@
 
 Simple ComfyUI node that predicts the score of an aesthetic image with SigLIP-based predictor.
 
+<p align="center">
+  <img src="./assets/example.png" width=80%>
+</p>
+
 ## Installation
 
 ```bash

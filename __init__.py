@@ -34,7 +34,7 @@ class CustomNodeMeta(type):
         return formatted_name
 
 
-class AestheticsPredictorNode(metaclass=CustomNodeMeta):
+class AestheticsPredictorV2_5Node(metaclass=CustomNodeMeta):
     RETURN_TYPES: tuple[str] = ("STRING",)
     RETURN_NAMES: tuple[str] = ("score",)
     FUNCTION: str = "predict"
