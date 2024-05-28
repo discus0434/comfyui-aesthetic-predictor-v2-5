@@ -5,7 +5,7 @@ Simple ComfyUI node that predicts the score of an aesthetic image with SigLIP-ba
 ## Installation
 
 ```bash
-git clone https://github.com/discus0434/aesthetic-predictor-v2-5.git
+git clone --recursive https://github.com/discus0434/aesthetic-predictor-v2-5.git
 cd aesthetic-predictor-v2-5
 pip install -r requirements.txt
 ```
