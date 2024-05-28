@@ -1,0 +1,3 @@
+[submodule "aesthetic-predictor-v2-5"]
+	path = aesthetic-predictor-v2-5
+	url = https://github.com/discus0434/aesthetic-predictor-v2-5.git
