@@ -1,0 +1,15 @@
+[project]
+name = "comfyui-aesthetic-predictor-v2-5"
+description = "Simple ComfyUI node that predicts the score of an aesthetic image with SigLIP-based predictor."
+version = "1.0.0"
+license = "LICENSE"
+dependencies = ["aesthetic-predictor-v2-5"]
+
+[project.urls]
+Repository = "https://github.com/discus0434/comfyui-aesthetic-predictor-v2-5"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "comfyui-aesthetic-predictor-v2-5"
+Icon = ""
